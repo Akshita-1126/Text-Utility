@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> TextUtils</title>
+    </head>
+    <body>
+        <h1 style="background-color:aqua;"> <font color="green">Welcome to text analyzer.</font></h1>
+        <h3> Enter your text below.</h3>
+        <form action='/analyze', method='get'>
+            <textarea name='text' style='width: 942px; height: 165px; background-color: aqua;'> </textarea> <br>
+            <input type="checkbox", name="removepunc"> Remove Punctuation <br>
+            <input type="checkbox", name="fullcaps"> UPPERCASE <br>
+            <input type="checkbox", name="newlinerem"> New line Remover <br>
+            <input type="checkbox", name="spacerem"> Space Remover <br>
+            <input type="checkbox", name="countchar"> Character Count <br>
+            <button type='submit'> Analyze text </button>
+        </form>
+    </body>
+</html>
