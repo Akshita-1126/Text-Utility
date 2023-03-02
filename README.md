@@ -1,7 +1,7 @@
 # Text-Utility
 My First Django Website
 
-Views.py contain the backend programming.
+Views.py contain the backend programming. <br>
 url.py contain the navigation path and patterns.
 Index.html contain the frontend of the website (I kept the frontend straigthforward because i was more focused on learning the framework).
 analyzed.html contain the frontend of the result.
