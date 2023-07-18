@@ -1,18 +1,68 @@
 <html>
     <head>
         <title> TextUtils</title>
+        <style>
+            body {
+              font-family: Arial, sans-serif;
+              background-color: #f7f7f7;
+            }
+      
+            h1 {
+              color: #333;
+              text-align: center;
+            }
+      
+            form {
+              margin: 0 auto;
+              width: 50%;
+              background-color: #fff;
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            }
+      
+            label {
+              display: block;
+              margin-bottom: 10px;
+              color: #333;
+              font-weight: bold;
+            }
+      
+            textarea {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              resize: vertical;
+            }
+      
+            input[type="submit"] {
+              background-color: #4CAF50;
+              color: #fff;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+      
+            input[type="submit"]:hover {
+              background-color: #3e8e41;
+            }
+          </style>
     </head>
     <body>
-        <h1 style="background-color:aqua;"> <font color="green">Welcome to text analyzer.</font></h1>
-        <h3> Enter your text below.</h3>
+        <h1> Welcome to Text Analyzer.</h1>
+
         <form action='/analyze', method='get'>
-            <textarea name='text' style='width: 942px; height: 165px; background-color: aqua;'> </textarea> <br>
+            <label for="text">Enter your text:</label>
+            <textarea name='text' style='width: 750px; height: 165px; background-color: aqua;'> </textarea> <br>
             <input type="checkbox", name="removepunc"> Remove Punctuation <br>
             <input type="checkbox", name="fullcaps"> UPPERCASE <br>
             <input type="checkbox", name="newlinerem"> New line Remover <br>
             <input type="checkbox", name="spacerem"> Space Remover <br>
             <input type="checkbox", name="countchar"> Character Count <br>
-            <button type='submit'> Analyze text </button>
+            <br>
+            <button type='submit', cursor="point"> Analyze text </button>
         </form>
     </body>
 </html>
